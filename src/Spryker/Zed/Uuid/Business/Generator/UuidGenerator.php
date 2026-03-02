@@ -36,11 +36,6 @@ class UuidGenerator implements UuidGeneratorInterface
      */
     protected $config;
 
-    /**
-     * @param \Spryker\Zed\Uuid\Persistence\UuidRepositoryInterface $repository
-     * @param \Spryker\Zed\Uuid\Persistence\UuidEntityManagerInterface $entityManager
-     * @param \Spryker\Zed\Uuid\UuidConfig $config
-     */
     public function __construct(
         UuidRepositoryInterface $repository,
         UuidEntityManagerInterface $entityManager,

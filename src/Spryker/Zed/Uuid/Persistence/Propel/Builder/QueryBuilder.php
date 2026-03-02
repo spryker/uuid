@@ -46,22 +46,11 @@ class QueryBuilder implements QueryBuilderInterface
         return $class;
     }
 
-    /**
-     * @param string $moduleName
-     * @param string $tableName
-     *
-     * @return string
-     */
     protected function getFullyQualifiedClassName(string $moduleName, string $tableName): string
     {
         return sprintf(static::QUERY_NAMESPACE, $moduleName, $this->camelizeTableName($tableName));
     }
 
-    /**
-     * @param string $tableName
-     *
-     * @return string
-     */
     protected function camelizeTableName(string $tableName): string
     {
         return str_replace(static::TABLE_SEPARATOR, '', ucwords($tableName, static::TABLE_SEPARATOR));

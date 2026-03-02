@@ -17,12 +17,6 @@ use Spryker\Zed\PropelOrm\Business\Runtime\ActiveQuery\Criteria;
  */
 class UuidEntityManager extends AbstractEntityManager implements UuidEntityManagerInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\UuidGeneratorConfigurationTransfer $uuidGeneratorConfigurationTransfer
-     * @param int $batchSize
-     *
-     * @return \Generated\Shared\Transfer\UuidGeneratorReportTransfer
-     */
     public function fillEmptyUuids(
         UuidGeneratorConfigurationTransfer $uuidGeneratorConfigurationTransfer,
         int $batchSize

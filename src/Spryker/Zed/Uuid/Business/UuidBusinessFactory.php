@@ -18,9 +18,6 @@ use Spryker\Zed\Uuid\Business\Generator\UuidGeneratorInterface;
  */
 class UuidBusinessFactory extends AbstractBusinessFactory
 {
-    /**
-     * @return \Spryker\Zed\Uuid\Business\Generator\UuidGeneratorInterface
-     */
     public function createUuidGenerator(): UuidGeneratorInterface
     {
         return new UuidGenerator(

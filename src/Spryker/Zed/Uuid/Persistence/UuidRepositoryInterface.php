@@ -14,10 +14,5 @@ use Generated\Shared\Transfer\UuidGeneratorConfigurationTransfer;
  */
 interface UuidRepositoryInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\UuidGeneratorConfigurationTransfer $uuidGeneratorConfigurationTransfer
-     *
-     * @return bool
-     */
     public function isUuidColumnDefinedInTable(UuidGeneratorConfigurationTransfer $uuidGeneratorConfigurationTransfer): bool;
 }

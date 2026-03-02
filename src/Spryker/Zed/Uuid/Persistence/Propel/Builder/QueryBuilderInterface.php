@@ -12,10 +12,5 @@ use Propel\Runtime\ActiveQuery\ModelCriteria;
 
 interface QueryBuilderInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\UuidGeneratorConfigurationTransfer $uuidGeneratorConfigurationTransfer
-     *
-     * @return \Propel\Runtime\ActiveQuery\ModelCriteria
-     */
     public function buildQuery(UuidGeneratorConfigurationTransfer $uuidGeneratorConfigurationTransfer): ModelCriteria;
 }

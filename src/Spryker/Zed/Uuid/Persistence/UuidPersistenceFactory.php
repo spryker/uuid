@@ -18,9 +18,6 @@ use Spryker\Zed\Uuid\Persistence\Propel\Builder\QueryBuilderInterface;
  */
 class UuidPersistenceFactory extends AbstractPersistenceFactory
 {
-    /**
-     * @return \Spryker\Zed\Uuid\Persistence\Propel\Builder\QueryBuilderInterface
-     */
     public function createQueryBuilder(): QueryBuilderInterface
     {
         return new QueryBuilder();

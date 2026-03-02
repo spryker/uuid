@@ -20,11 +20,6 @@ class UuidRepository extends AbstractRepository implements UuidRepositoryInterfa
      */
     protected const COLUMN_UUID = 'uuid';
 
-    /**
-     * @param \Generated\Shared\Transfer\UuidGeneratorConfigurationTransfer $uuidGeneratorConfigurationTransfer
-     *
-     * @return bool
-     */
     public function isUuidColumnDefinedInTable(UuidGeneratorConfigurationTransfer $uuidGeneratorConfigurationTransfer): bool
     {
         $query = $this->getFactory()

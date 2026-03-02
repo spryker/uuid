@@ -46,9 +46,6 @@ class UuidGeneratorConsole extends Console
      */
     protected const SUCCESS_MESSAGE = 'Uuid was generated for %d records in %s table.';
 
-    /**
-     * @return void
-     */
     protected function configure(): void
     {
         parent::configure();
@@ -61,12 +58,6 @@ class UuidGeneratorConsole extends Console
         $this->addArgument(static::ARGUMENT_TABLE, InputArgument::REQUIRED, 'Database table name, e.g. "spy_quote".');
     }
 
-    /**
-     * @param \Symfony\Component\Console\Input\InputInterface $input
-     * @param \Symfony\Component\Console\Output\OutputInterface $output
-     *
-     * @return int
-     */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $uuidGeneratorReportTransfer = $this->getFacade()->generateUuids(
@@ -78,11 +69,6 @@ class UuidGeneratorConsole extends Console
         return static::CODE_SUCCESS;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\UuidGeneratorReportTransfer $uuidGeneratorReportTransfer
-     *
-     * @return string
-     */
     protected function getSuccessMessage(UuidGeneratorReportTransfer $uuidGeneratorReportTransfer): string
     {
         return sprintf(

@@ -12,10 +12,5 @@ use Generated\Shared\Transfer\UuidGeneratorReportTransfer;
 
 interface UuidGeneratorInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\UuidGeneratorConfigurationTransfer $uuidGeneratorConfigurationTransfer
-     *
-     * @return \Generated\Shared\Transfer\UuidGeneratorReportTransfer
-     */
     public function generate(UuidGeneratorConfigurationTransfer $uuidGeneratorConfigurationTransfer): UuidGeneratorReportTransfer;
 }
